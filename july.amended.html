@@ -9,6 +9,15 @@
 </head>
 
 <body>
+
+    <div id="preloader">
+        <div class="loader"></div>
+        <p>Loading ...</p>
+    </div>
+
+    <div id="content" style="display:none;">
+
+    </div>
     <header id="header">
         <video autoplay muted loop playsinline id="bg-video">
             <source src="https://www.mclc.org.my/wp-content/uploads/2025/08/MCLC-BG-Boomerang2.mp4" type="video/mp4">
@@ -848,6 +857,23 @@
             </div>
         </section>
     </main>
+    </div>
+
+    <script>
+
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+            const content = document.getElementById("content");
+
+            preloader.style.opacity = "0";
+            preloader.style.transition = "opacity 0.5s ease";
+
+            setTimeout(() => {
+                preloader.style.display = "none";
+                content.style.display = "block";
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>

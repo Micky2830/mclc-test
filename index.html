@@ -9,1049 +9,1121 @@
 </head>
 
 <body>
-    <header id="header">
-        <video autoplay muted loop playsinline id="bg-video">
-            <source src="https://www.mclc.org.my/wp-content/uploads/2025/08/MCLC-BG-Boomerang2.mp4" type="video/mp4">
-        </video>
+    <div id="preloader">
+        <div class="loader"></div>
+        <p>Loading ...</p>
+    </div>
 
-        <div class="landing-cover">
-            <div class="landing-left">
-                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/Asset-3.png" alt="header-image">
-            </div>
-
-            <div class="landing-right">
-                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/Asset-1@3x.png" alt="header-image">
-            </div>
-
-
-        </div>
-
-        <div class="countdown">
-            <div class="countdown-item">
-                <h1 id="day" class="digit">00</h1>
-                <p class="digit-name">Days</p>
-            </div>
-            <div class="countdown-item">
-                <h1 id="hour" class="digit">00</h1>
-                <p class="digit-name">Hours</p>
-            </div>
-            <div class="countdown-item">
-                <h1 id="minute" class="digit">00</h1>
-                <p class="digit-name">Minutes</p>
-            </div>
-            <div class="countdown-item">
-                <h1 id="second" class="digit">00</h1>
-                <p class="digit-name">Seconds</p>
-            </div>
-        </div>
-    </header>
-
-    <nav class="side-nav" aria-label="Section navigation">
-        <div class="nav-group">
-            <a href="#projects" class="nav-item" aria-label="项目">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path fill="none" stroke="currentColor" stroke-width="2"
-                        d="M17 7h6v16H7v-4m16-8h-6M13 0v3M1 7h16M1 3h16v16H1V3Zm4-3v3m-1 8h2m2 0h6M4 15h2m2 0h6" />
-                </svg>
-                <span class="tip">项目</span>
-            </a>
-
-            <div class="dropdown">
-                <a href="index.html">October 2025</a>
-                <a href="july.amended.html">July 2025</a>
-            </div>
-        </div>
-        <a href="#header" class="nav-item" aria-label="首页">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M11.235 2.374c-.368.152-.697.482-1.356 1.14c-.659.66-.989.989-1.14 1.356a2 2 0 0 0 0 1.531c.151.368.48.697 1.14 1.356c.658.659.988.989 1.356 1.14a2 2 0 0 0 1.53 0c.368-.151.697-.48 1.356-1.14c.66-.659.988-.988 1.14-1.356a2 2 0 0 0 0-1.53c-.152-.368-.48-.697-1.14-1.356c-.659-.66-.988-.989-1.356-1.141a2 2 0 0 0-1.53 0ZM4.87 8.738c-.367.152-.697.481-1.355 1.14c-.66.66-.989.989-1.141 1.356a2 2 0 0 0 0 1.531c.152.368.482.697 1.14 1.356c.66.659.989.988 1.356 1.14a2 2 0 0 0 1.531 0c.368-.152.697-.481 1.356-1.14c.66-.659.988-.988 1.14-1.356a2 2 0 0 0 0-1.53c-.152-.368-.48-.698-1.14-1.357c-.659-.659-.988-.988-1.356-1.14a2 2 0 0 0-1.53 0Zm11.373 1.14c-.659.66-.988.989-1.14 1.356a2 2 0 0 0 0 1.531c.152.368.481.697 1.14 1.356c.659.659.989.988 1.356 1.14a2 2 0 0 0 1.53 0c.368-.152.698-.481 1.357-1.14c.659-.659.987-.988 1.14-1.356a2 2 0 0 0 0-1.53c-.153-.368-.481-.698-1.14-1.357c-.66-.659-.989-.988-1.356-1.14a2 2 0 0 0-1.531 0c-.367.152-.697.481-1.356 1.14Zm-5.008 5.224c-.368.152-.697.482-1.356 1.14c-.659.66-.989.989-1.14 1.357a2 2 0 0 0 0 1.53c.151.368.48.697 1.14 1.356c.658.659.988.989 1.356 1.14a2 2 0 0 0 1.53 0c.368-.151.697-.48 1.356-1.14c.66-.659.988-.988 1.14-1.356c.203-.49.203-1.04 0-1.53c-.152-.368-.48-.698-1.14-1.356c-.659-.66-.988-.989-1.356-1.141a2 2 0 0 0-1.53 0Z" />
-            </svg>
-            <span class="tip">首页</span>
-        </a>
-        <a href="#colaborators" class="nav-item" aria-label="合作伙伴">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 640 512">
-                <path fill="currentColor"
-                    d="m519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8c12.5 10.8 26 15.9 41.1 15.9c18.2 0 35.3-7.4 48.8-24c22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4l-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5l-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3c14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5l108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4l12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0c-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16c0 8.9-7.2 16-16 16z" />
-            </svg>
-            <span class="tip">合作伙伴</span>
-        </a>
-        <a href="#speakers-section" class="nav-item" aria-label="讲师">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
-                <path fill="none" stroke="currentColor" stroke-width="2"
-                    d="M8 11c0 3 1.79 4 4 4s4-1 4-4V5c0-3-1.79-4-4-4S8 2 8 5v6ZM4 9v2c0 5 3.582 8 8 8s8-3 8-8V9m-8 15v-5" />
-            </svg>
-            <span class="tip">讲师</span>
-        </a>
-        <a href="#briefing" class="nav-item" aria-label="简介">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                    d="M3 6.25A3.25 3.25 0 0 1 6.25 3h11.5A3.25 3.25 0 0 1 21 6.25v11.5A3.25 3.25 0 0 1 17.75 21H6.25A3.25 3.25 0 0 1 3 17.75V6.25ZM6.25 4.5A1.75 1.75 0 0 0 4.5 6.25v11.5c0 .966.784 1.75 1.75 1.75h11.5a1.75 1.75 0 0 0 1.75-1.75V6.25a1.75 1.75 0 0 0-1.75-1.75H6.25ZM6 8.25c0-.966.784-1.75 1.75-1.75h8.5c.966 0 1.75.784 1.75 1.75v1.5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 6 9.75v-1.5ZM7.75 8a.25.25 0 0 0-.25.25v1.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25h-8.5Zm-1 5a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5ZM6 16.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75ZM15.25 13a1.75 1.75 0 0 0-1.75 1.75v1c0 .966.784 1.75 1.75 1.75h1A1.75 1.75 0 0 0 18 15.75v-1A1.75 1.75 0 0 0 16.25 13h-1ZM15 14.75a.25.25 0 0 1 .25-.25h1a.25.25 0 0 1 .25.25v1a.25.25 0 0 1-.25.25h-1a.25.25 0 0 1-.25-.25v-1Z" />
-            </svg>
-            <span class="tip">简介</span>
-        </a>
-        <a href="#teacher-ai-ability" class="nav-item" aria-label="计划目标">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 14 14">
-                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M13.48 7.516a6.5 6.5 0 1 1-6.93-7" />
-                    <path d="M9.79 8.09A3 3 0 1 1 5.9 4.21M7 7l2.5-2.5m2 .5l-2-.5l-.5-2l2-2l.5 2l2 .5z" />
-                </g>
-            </svg>
-            <span class="tip">计划目标</span>
-        </a>
-        <a href="#rundown" class="nav-item" aria-label="流程">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                    d="m15.3 16.7l1.4-1.4l-3.7-3.7V7h-2v5.4l4.3 4.3ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-10Zm0 8q3.325 0 5.663-2.337T20 12q0-3.325-2.337-5.663T12 4Q8.675 4 6.337 6.337T4 12q0 3.325 2.337 5.663T12 20Z" />
-            </svg>
-            <span class="tip">流程</span>
-        </a>
-        <a href="#mclc-members" class="nav-item" aria-label="MCLC 成员">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 48 48">
-                <path fill="currentColor"
-                    d="M10.5 16a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0ZM16 8a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm14.5 10a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0Zm3.5-6a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm0 27c-2.176 0-3.922-.352-5.316-.922l.186-.24c.494-.651.873-1.303 1.163-1.921c1.02.355 2.316.583 3.966.583c4.276 0 6.173-1.533 7.063-2.831a5.55 5.55 0 0 0 .925-2.5a2.983 2.983 0 0 0 .012-.176v-.243c0-.69-.56-1.25-1.25-1.25h-9.886a5.73 5.73 0 0 0-1.255-2.5H40.75a3.75 3.75 0 0 1 3.75 3.75v.297l-.003.086c-.004.07-.01.164-.02.279a8.05 8.05 0 0 1-1.351 3.67C41.701 37.157 38.973 39 33.998 39ZM6.75 27A3.75 3.75 0 0 0 3 30.75v1.303l.004.097c.004.08.012.186.026.318c.029.262.084.622.192 1.05a8.686 8.686 0 0 0 1.5 3.112C6.479 38.946 9.826 41 16 41c6.175 0 9.522-2.054 11.277-4.37a8.687 8.687 0 0 0 1.501-3.113c.108-.427.163-.787.192-1.05a5.585 5.585 0 0 0 .30-.414V30.75A3.75 3.75 0 0 0 25.25 27H6.75Zm-1.249 5.024l-.001-.032V30.75c0-.69.56-1.25 1.25-1.25h18.5c.69 0 1.25.56 1.25 1.25v1.242l-.001.032a5.189 5.189 0 0 1-.144.88a6.187 6.187 0 0 1-1.07 2.216c-1.182 1.56-3.71 3.38-9.285 3.38s-8.103-1.82-9.285-3.38a6.186 6.186 0 0 1-1.07-2.215a5.2 5.2 0 0 1-.144-.881Z" />
-            </svg>
-            <span class="tip">MCLC 成员</span>
-        </a>
-        <a href="#t-video" class="nav-item" aria-label="视频">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                    d="M12 3a9 9 0 0 1 9 9c0 2.453-.98 4.676-2.573 6.3A8.967 8.967 0 0 1 12 21a9 9 0 1 1 0-18Zm6.326 18c.55-.387 1.061-.822 1.53-1.3A10.967 10.967 0 0 0 23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11h12v-2h-5.674ZM12 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2ZM9 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm-2 4a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm13-1a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm-2 4a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0Z" />
-            </svg>
-            <span class="tip">视频</span>
-        </a>
-        <a href="#banner2" class="nav-item" aria-label="投稿">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 14">
-                <path fill="currentColor"
-                    d="M14.5 13h-13C.67 13 0 12.33 0 11.5v-9C0 1.67.67 1 1.5 1h13c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5ZM1.5 2c-.28 0-.5.22-.5.5v9c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-9c0-.28-.22-.5-.5-.5h-13Z" />
-                <path fill="currentColor"
-                    d="M8 8.96c-.7 0-1.34-.28-1.82-.79L.93 2.59c-.19-.2-.18-.52.02-.71c.2-.19.52-.18.71.02l5.25 5.58c.57.61 1.61.61 2.18 0l5.25-5.57c.19-.20.51-.21.71-.02c.2.19.21.51.02.71L9.82 8.18c-.48.51-1.12.79-1.82.79Z" />
-            </svg>
-            <span class="tip">投稿</span>
-        </a>
-    </nav>
-
-    <section class="colaborators" id="colaborators">
-        <div class="colab-class">
-            <div class="row1">
-                <div class="organizer">
-                    <div class="organizer-title">
-                        <h5>主办单位</h5>
-                    </div>
-                    <div class="organizer-logo">
-                        <img loading="lazy" class="img-90 w-160" src="https://www.mclc.org.my/wp-content/uploads/2025/06/Picture6.png"
-                            alt="mclc">
-                    </div>
-                </div>
-                <div class="organizer">
-                    <div class="organizer-title">
-                        <h5>联办单位</h5>
-                    </div>
-                    <div class="organizer-logo">
-                        <img loading="lazy" class="img-90" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL1.png"
-                            alt="jpnkl">
-                    </div>
-                </div>
-                <div class="organizer">
-                    <div class="organizer-title">
-                        <h5>AI生态合作伙伴</h5>
-                    </div>
-                    <div class="organizer-logo">
-                        <img loading="lazy" class="img-60" src="https://www.mclc.org.my/wp-content/uploads/2025/06/L19_1.png"
-                            alt="phison maistorage">
-                        <img loading="lazy" class="img-80 w-120"
-                            src="https://www.mclc.org.my/wp-content/uploads/2025/06/IMD-logo-2025.png"
-                            alt="mobile digital">
-                    </div>
-                </div>
-                <div class="organizer">
-                    <div class="organizer-title">
-                        <h5>教育科技策略伙伴</h5>
-                    </div>
-                    <div class="organizer-logo">
-                        <img loading="lazy" class="img-60" src="https://www.mclc.org.my/wp-content/uploads/2025/09/google.png"
-                            alt="google">
-                    </div>
-                </div>
-                <div class="organizer">
-                    <div class="organizer-title">
-                        <h5>大学与学术支持单位</h5>
-                    </div>
-                    <div class="organizer-logo">
-                        <img loading="lazy" class="img-60" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL3.png"
-                            alt="utar">
-                        <img loading="lazy" class="img-40" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL4.png"
-                            alt="tarumt">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row2">
-                <div class="organizer">
-                    <div class="organizer-title">
-                        <h5>AI法律伙伴</h5>
-                    </div>
-                    <div class="organizer-logo">
-                        <img loading="lazy" class="img-60" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL12.png"
-                            alt="tt seng & partners">
-                    </div>
-                </div>
-                <div class="organizer">
-                    <div class="organizer-title">
-                        <h5>技术支援</h5>
-                    </div>
-                    <div class="organizer-logo">
-                        <img loading="lazy" class="img-60 w-160" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL8.png"
-                            alt="ikey technology">
-                        <img loading="lazy" class="img-40" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL9.png"
-                            alt="ifinext">
-                        <img loading="lazy" class="img-60 w-160"
-                            src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL11.png"
-                            alt="troffee education">
-                    </div>
-                </div>
-                <div class="organizer">
-                    <div class="organizer-title">
-                        <h5>教学伙伴</h5>
-                    </div>
-                    <div class="organizer-logo">
-                        <img loading="lazy" class="img-50"
-                            src="https://www.mclc.org.my/wp-content/uploads/2025/09/1.-LK-EDU-Logo-Colour.png"
-                            alt="LK EDU">
-                        <img loading="lazy" class="img-50" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL5.png"
-                            alt="seevo">
-                        <img loading="lazy" class="img-50" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL6.png"
-                            alt="eduwel">
-                        <img loading="lazy" class="img-40" src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL7.png"
-                            alt="fc education group">
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <main>
-        <section class="speakers-section" id="speakers-section" style="margin-top: 70px;">
-            <h2 style="text-align: center;">特邀演讲嘉宾和专家讲师</h2>
-            <div class="speakers-container">
-                <div class="speakers">
-                    <div class="speakers-img">
-                        <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/拿督尤芳达校长-1.png" alt="speakers">
-                    </div>
-                    <div class="speakers-info">
-                        <h2 class="speakers-name">拿督尤芳达校长</h2>
-                        <h3 class="speakers-title">拉曼大学校长</h3>
-                        <h2 class="speakers-content">教育数位转型与AI教师新角色</h2>
-                        <p class="speakers-description ">拉曼大学校长，资深工程与教育学者，专研微波遥感与数码科技。近期带领拉曼大学与 IBM SkillsBuild
-                            合作，为学生、校友及弱势群体提供免费 AI 技能培训，推动全民 AI 素养与数码包容。</p>
-                    </div>
-                </div>
-                <div class="speakers">
-                    <div class="speakers-img loading="lazy" sze-mei">
-                        <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/sze-mei-1.png" alt="speakers">
-                    </div>
-                    <div class="speakers-info">
-                        <h2 class="speakers-name">柯思媚</h2>
-                        <h3 class="speakers-title">Google for Education 马来西亚数码转型与社区负责人</h3>
-                        <h2 class="speakers-content">使用“GEMINI”  “GOOGLE VIT”创意教学</h2>
-                        <p class="speakers-description">柯思媚（Kuah Sze Mei）现任 Google for Education
-                            马来西亚数码转型与社区负责人，拥有丰富经验，培训高等教育教师高效使用 Google Workspace 工具。她专注于教育中的 AI 应用，如 Gemini AI 与
-                            NotebookLM，擅长展示 AI 如何融入日常教学与研究，提升教学方法、设计互动教材，并为学生打造个性化学习体验.</p>
-                    </div>
-                </div>
-                <div class="speakers">
-                    <div class="speakers-img">
-                        <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/lo-wai-yee.png" alt="speakers">
-                    </div>
-                    <div class="speakers-info">
-                        <h2 class="speakers-name">卢泋妤</h2>
-                        <h3 class="speakers-title">首席执行总裁</h3>
-                        <h3 class="speakers-title">EDUWEL SDN. BHD.</h3>
-                        <h2 class="speakers-content">使用“GEMINI”  “GOOGLE VIT”创意教学</h2>
-                        <p class="speakers-description">
-                            卢泋妤(Yivonn
-                            Lo)是EDUWEL的首席执行官与创办人，致力于通过创新科技教育为青少年赋能。她积极推动数字化学习及国际竞赛，旨在激发学生的创造力并培养其未来所需技能。凭借丰富的教育行业经验，她已成功将数千名学生与全球机遇相连接，并带领EDUWEL发展成为亚洲领先的STEM与科技平台。
-                        </p>
-                    </div>
-                </div>
-                <div class="speakers">
-                    <div class="speakers-img">
-                        <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/5f2e3d4e-9696-4d54-85ab-6dd9cb1a970b.png"
-                            alt="speakers">
-                    </div>
-                    <div class="speakers-info">
-                        <h2 class="speakers-name">余永乐</h2>
-                        <h3 class="speakers-title"> 首席技术官 </h3>
-                        <h3 class="speakers-title">EDUWEL SDN. BHD.</h3>
-                        <h2 class="speakers-content">AI写作助理 + Canva AI 创意教学设计</h2>
-                        <p class="speakers-description">余永乐是Eduwel
-                            首席技术官，专注数码科技与人工智能程序设计。通过创新教学普及化未来科技教育，培养青年科技创造与实践能力。作为国际科技竞赛首席评委，他推动公平高效的评估机制，帮助青年将原型转化为市场化产品。凭借丰富的科技教育经验，他成功培养多位冠军，并激励更多潜力人才投身科技领域。
-                        </p>
-                    </div>
-                </div>
-                <div class="speakers">
-                    <div class="speakers-img">
-                        <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/alvis.png" alt="speakers">
-                    </div>
-                    <div class="speakers-info">
-                        <h2 class="speakers-name">周长健</h2>
-                        <h3 class="speakers-title">缤纷教育中心创办人兼CEO</h3>
-                        <h2 class="speakers-content">使用 “ SUNO” 创意教学（互动工具）</h2>
-                        <p class="speakers-description">
-                            周长键是缤纷教育中心的协办人兼 为一名体验教育认证讲师,他擅长 将心理学与教育活动巧妙结合。周 长键倡导“高效、轻松、有趣”的 教学理念,致力于打造一个寓教于
-                            乐的教育生态系统,让学习充满乐 趣。
-                        </p>
-                    </div>
-                </div>
-                <div class="speakers">
-                    <div class="speakers-img">
-                        <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/terry-kok.png" alt="speakers">
-                    </div>
-                    <div class="speakers-info">
-                        <h2 class="speakers-name">郭炜勇</h2>
-                        <h3 class="speakers-title">课外活动副校长</h3>
-                        <h2 class="speakers-content">我的AI 教学蓝图</h2>
-                        <p class="speakers-description">黎贤杰 (Dave) (课外活动副校长) 谷歌认证培训讲师 及 Tableau Desktop Specialist
-                            一位获得谷歌教育认证的培训讲师和GPGD专家，自2024年起已培训超过1,000名教师和专业人士。他擅长人工智能、数据分析及多媒体应用，协助教育工作者将谷歌Gemini
-                            AI、Tableau、Wayground, 微软和苹果等工具无缝融入教学，旨在让课堂更具吸引力、高效和数据化。
-                        </p>
-                    </div>
-                </div>
-                <div class="speakers">
-                    <div class="speakers-img">
-                        <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/dave.png" alt="speakers">
-                    </div>
-                    <div class="speakers-info">
-                        <h2 class="speakers-name">黎贤杰</h2>
-                        <h3 class="speakers-title">课外活动副校长</h3>
-                        <h2 class="speakers-content">我的AI 教学蓝图</h2>
-                        <p class="speakers-description">黎贤杰 (Dave) (课外活动副校长) 谷歌认证培训讲师 及 Tableau Desktop Specialist
-                            一位获得谷歌教育认证的培训讲师和GPGD专家，自2024年起已培训超过1,000名教师和专业人士。他擅长人工智能、数据分析及多媒体应用，协助教育工作者将谷歌Gemini
-                            AI、Tableau、Wayground, 微软和苹果等工具无缝融入教学，旨在让课堂更具吸引力、高效和数据化。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="briefing" id="briefing">
-            <video autoplay muted loop playsinline id="bg-video-briefing">
+    <div id="content" style="display:none;">
+        <header id="header">
+            <video autoplay muted loop playsinline id="bg-video">
                 <source src="https://www.mclc.org.my/wp-content/uploads/2025/08/MCLC-BG-Boomerang2.mp4"
                     type="video/mp4">
             </video>
-            <div class="ai-face">
-                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/what-is-MCLC-AI-1.png" alt="face">
+
+            <div class="landing-cover">
+                <div class="landing-left">
+                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/Asset-3.png"
+                        alt="header-image">
+                </div>
+
+                <div class="landing-right">
+                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/Asset-1@3x.png"
+                        alt="header-image">
+                </div>
+
+
             </div>
-            <div class="briefing-text">
-                <h5>MCLC-AI 国家人工智能教育计划简介</h5>
-                <p>
-                    在国家迈向高科技驱动型经济体的关键阶段&#44; 教育不仅是文明传承的核心&#44;
-                    更是国家科技自主与经济转型的基础设施。为呼应国家“数字教育政策”与“TVET 国家发展战略”&#44;
-                    马来西亚华文理事会（华理会）启动 MCLC-AI
-                    国家级教育赋能计划&#44; 以人工智能为核心动能&#44; 加速全国基础教育的科技化、专业化、 产业化 。
-                </p>
-                <p>
-                    MCLC-AI 以“微型学校数码化教学”为切入点&#44; 联合教育部推动城乡同步课堂&#44; 实现优质资源共享&#44;
-                    缩小城乡差距&#44; 落实教育公平。此举不仅提升教学效能&#44; 更为乡区学校接轨国家发展蓝图打下基础。
-                </p>
-                <p>
-                    2025年&#44; 华理会设立“AI赋能华文教育工委会”&#44; 推行「学好AI、用好AI」全国教师培训计划&#44;
-                    系统培养具备AI素养与跨领域能力的T型教师。我们致力于将AI融入教学实践&#44; 让每一位教师都能成为引领变革的创新力量。
-                </p>
-                <p>
-                    更重要的是&#44; MCLC-AI与国家TVET战略深度对接&#44; 推动AI、编程、数据科技等实用技能纳入基础教育阶段&#44; 为未来技术型社会培育具备实战能力的年轻人才。
-                    我们相信&#44; 未来的竞争&#44; 不只在知识&#44; 更在能力与创造力。
-                </p>
-                <p>
-                    MCLC-AI&#44; 不只是教育改革计划&#44; 更是国家未来竞争力的战略布局。
-                </p>
+
+            <div class="countdown">
+                <div class="countdown-item">
+                    <h1 id="day" class="digit">00</h1>
+                    <p class="digit-name">Days</p>
+                </div>
+                <div class="countdown-item">
+                    <h1 id="hour" class="digit">00</h1>
+                    <p class="digit-name">Hours</p>
+                </div>
+                <div class="countdown-item">
+                    <h1 id="minute" class="digit">00</h1>
+                    <p class="digit-name">Minutes</p>
+                </div>
+                <div class="countdown-item">
+                    <h1 id="second" class="digit">00</h1>
+                    <p class="digit-name">Seconds</p>
+                </div>
             </div>
+        </header>
+
+        <nav class="side-nav" aria-label="Section navigation">
+            <div class="nav-group">
+                <a href="#projects" class="nav-item" aria-label="项目">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-width="2"
+                            d="M17 7h6v16H7v-4m16-8h-6M13 0v3M1 7h16M1 3h16v16H1V3Zm4-3v3m-1 8h2m2 0h6M4 15h2m2 0h6" />
+                    </svg>
+                    <span class="tip">项目</span>
+                </a>
+
+                <div class="dropdown">
+                    <a href="index.html">October 2025</a>
+                    <a href="july.amended.html">July 2025</a>
+                </div>
+            </div>
+            <a href="#header" class="nav-item" aria-label="首页">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M11.235 2.374c-.368.152-.697.482-1.356 1.14c-.659.66-.989.989-1.14 1.356a2 2 0 0 0 0 1.531c.151.368.48.697 1.14 1.356c.658.659.988.989 1.356 1.14a2 2 0 0 0 1.53 0c.368-.151.697-.48 1.356-1.14c.66-.659.988-.988 1.14-1.356a2 2 0 0 0 0-1.53c-.152-.368-.48-.697-1.14-1.356c-.659-.66-.988-.989-1.356-1.141a2 2 0 0 0-1.53 0ZM4.87 8.738c-.367.152-.697.481-1.355 1.14c-.66.66-.989.989-1.141 1.356a2 2 0 0 0 0 1.531c.152.368.482.697 1.14 1.356c.66.659.989.988 1.356 1.14a2 2 0 0 0 1.531 0c.368-.152.697-.481 1.356-1.14c.66-.659.988-.988 1.14-1.356a2 2 0 0 0 0-1.53c-.152-.368-.48-.698-1.14-1.357c-.659-.659-.988-.988-1.356-1.14a2 2 0 0 0-1.53 0Zm11.373 1.14c-.659.66-.988.989-1.14 1.356a2 2 0 0 0 0 1.531c.152.368.481.697 1.14 1.356c.659.659.989.988 1.356 1.14a2 2 0 0 0 1.53 0c.368-.152.698-.481 1.357-1.14c.659-.659.987-.988 1.14-1.356a2 2 0 0 0 0-1.53c-.153-.368-.481-.698-1.14-1.357c-.66-.659-.989-.988-1.356-1.14a2 2 0 0 0-1.531 0c-.367.152-.697.481-1.356 1.14Zm-5.008 5.224c-.368.152-.697.482-1.356 1.14c-.659.66-.989.989-1.14 1.357a2 2 0 0 0 0 1.53c.151.368.48.697 1.14 1.356c.658.659.988.989 1.356 1.14a2 2 0 0 0 1.53 0c.368-.151.697-.48 1.356-1.14c.66-.659.988-.988 1.14-1.356c.203-.49.203-1.04 0-1.53c-.152-.368-.48-.698-1.14-1.356c-.659-.66-.988-.989-1.356-1.141a2 2 0 0 0-1.53 0Z" />
+                </svg>
+                <span class="tip">首页</span>
+            </a>
+            <a href="#colaborators" class="nav-item" aria-label="合作伙伴">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 640 512">
+                    <path fill="currentColor"
+                        d="m519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8c12.5 10.8 26 15.9 41.1 15.9c18.2 0 35.3-7.4 48.8-24c22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4l-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5l-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3c14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5l108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4l12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0c-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16c0 8.9-7.2 16-16 16z" />
+                </svg>
+                <span class="tip">合作伙伴</span>
+            </a>
+            <a href="#speakers-section" class="nav-item" aria-label="讲师">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-width="2"
+                        d="M8 11c0 3 1.79 4 4 4s4-1 4-4V5c0-3-1.79-4-4-4S8 2 8 5v6ZM4 9v2c0 5 3.582 8 8 8s8-3 8-8V9m-8 15v-5" />
+                </svg>
+                <span class="tip">讲师</span>
+            </a>
+            <a href="#briefing" class="nav-item" aria-label="简介">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M3 6.25A3.25 3.25 0 0 1 6.25 3h11.5A3.25 3.25 0 0 1 21 6.25v11.5A3.25 3.25 0 0 1 17.75 21H6.25A3.25 3.25 0 0 1 3 17.75V6.25ZM6.25 4.5A1.75 1.75 0 0 0 4.5 6.25v11.5c0 .966.784 1.75 1.75 1.75h11.5a1.75 1.75 0 0 0 1.75-1.75V6.25a1.75 1.75 0 0 0-1.75-1.75H6.25ZM6 8.25c0-.966.784-1.75 1.75-1.75h8.5c.966 0 1.75.784 1.75 1.75v1.5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 6 9.75v-1.5ZM7.75 8a.25.25 0 0 0-.25.25v1.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25h-8.5Zm-1 5a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5ZM6 16.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75ZM15.25 13a1.75 1.75 0 0 0-1.75 1.75v1c0 .966.784 1.75 1.75 1.75h1A1.75 1.75 0 0 0 18 15.75v-1A1.75 1.75 0 0 0 16.25 13h-1ZM15 14.75a.25.25 0 0 1 .25-.25h1a.25.25 0 0 1 .25.25v1a.25.25 0 0 1-.25.25h-1a.25.25 0 0 1-.25-.25v-1Z" />
+                </svg>
+                <span class="tip">简介</span>
+            </a>
+            <a href="#teacher-ai-ability" class="nav-item" aria-label="计划目标">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 14 14">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13.48 7.516a6.5 6.5 0 1 1-6.93-7" />
+                        <path d="M9.79 8.09A3 3 0 1 1 5.9 4.21M7 7l2.5-2.5m2 .5l-2-.5l-.5-2l2-2l.5 2l2 .5z" />
+                    </g>
+                </svg>
+                <span class="tip">计划目标</span>
+            </a>
+            <a href="#rundown" class="nav-item" aria-label="流程">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="m15.3 16.7l1.4-1.4l-3.7-3.7V7h-2v5.4l4.3 4.3ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-10Zm0 8q3.325 0 5.663-2.337T20 12q0-3.325-2.337-5.663T12 4Q8.675 4 6.337 6.337T4 12q0 3.325 2.337 5.663T12 20Z" />
+                </svg>
+                <span class="tip">流程</span>
+            </a>
+            <a href="#mclc-members" class="nav-item" aria-label="MCLC 成员">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 48 48">
+                    <path fill="currentColor"
+                        d="M10.5 16a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0ZM16 8a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm14.5 10a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0Zm3.5-6a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm0 27c-2.176 0-3.922-.352-5.316-.922l.186-.24c.494-.651.873-1.303 1.163-1.921c1.02.355 2.316.583 3.966.583c4.276 0 6.173-1.533 7.063-2.831a5.55 5.55 0 0 0 .925-2.5a2.983 2.983 0 0 0 .012-.176v-.243c0-.69-.56-1.25-1.25-1.25h-9.886a5.73 5.73 0 0 0-1.255-2.5H40.75a3.75 3.75 0 0 1 3.75 3.75v.297l-.003.086c-.004.07-.01.164-.02.279a8.05 8.05 0 0 1-1.351 3.67C41.701 37.157 38.973 39 33.998 39ZM6.75 27A3.75 3.75 0 0 0 3 30.75v1.303l.004.097c.004.08.012.186.026.318c.029.262.084.622.192 1.05a8.686 8.686 0 0 0 1.5 3.112C6.479 38.946 9.826 41 16 41c6.175 0 9.522-2.054 11.277-4.37a8.687 8.687 0 0 0 1.501-3.113c.108-.427.163-.787.192-1.05a5.585 5.585 0 0 0 .30-.414V30.75A3.75 3.75 0 0 0 25.25 27H6.75Zm-1.249 5.024l-.001-.032V30.75c0-.69.56-1.25 1.25-1.25h18.5c.69 0 1.25.56 1.25 1.25v1.242l-.001.032a5.189 5.189 0 0 1-.144.88a6.187 6.187 0 0 1-1.07 2.216c-1.182 1.56-3.71 3.38-9.285 3.38s-8.103-1.82-9.285-3.38a6.186 6.186 0 0 1-1.07-2.215a5.2 5.2 0 0 1-.144-.881Z" />
+                </svg>
+                <span class="tip">MCLC 成员</span>
+            </a>
+            <a href="#t-video" class="nav-item" aria-label="视频">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 3a9 9 0 0 1 9 9c0 2.453-.98 4.676-2.573 6.3A8.967 8.967 0 0 1 12 21a9 9 0 1 1 0-18Zm6.326 18c.55-.387 1.061-.822 1.53-1.3A10.967 10.967 0 0 0 23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11h12v-2h-5.674ZM12 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2ZM9 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm-2 4a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm13-1a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm-2 4a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0Z" />
+                </svg>
+                <span class="tip">视频</span>
+            </a>
+            <a href="#banner2" class="nav-item" aria-label="投稿">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 14">
+                    <path fill="currentColor"
+                        d="M14.5 13h-13C.67 13 0 12.33 0 11.5v-9C0 1.67.67 1 1.5 1h13c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5ZM1.5 2c-.28 0-.5.22-.5.5v9c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-9c0-.28-.22-.5-.5-.5h-13Z" />
+                    <path fill="currentColor"
+                        d="M8 8.96c-.7 0-1.34-.28-1.82-.79L.93 2.59c-.19-.2-.18-.52.02-.71c.2-.19.52-.18.71.02l5.25 5.58c.57.61 1.61.61 2.18 0l5.25-5.57c.19-.20.51-.21.71-.02c.2.19.21.51.02.71L9.82 8.18c-.48.51-1.12.79-1.82.79Z" />
+                </svg>
+                <span class="tip">投稿</span>
+            </a>
+        </nav>
+
+        <section class="colaborators" id="colaborators">
+            <div class="colab-class">
+                <div class="row1">
+                    <div class="organizer">
+                        <div class="organizer-title">
+                            <h5>主办单位</h5>
+                        </div>
+                        <div class="organizer-logo">
+                            <img loading="lazy" class="img-90 w-160"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/Picture6.png" alt="mclc">
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-title">
+                            <h5>联办单位</h5>
+                        </div>
+                        <div class="organizer-logo">
+                            <img loading="lazy" class="img-90"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL1.png" alt="jpnkl">
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-title">
+                            <h5>AI生态合作伙伴</h5>
+                        </div>
+                        <div class="organizer-logo">
+                            <img loading="lazy" class="img-60"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/L19_1.png"
+                                alt="phison maistorage">
+                            <img loading="lazy" class="img-80 w-120"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/IMD-logo-2025.png"
+                                alt="mobile digital">
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-title">
+                            <h5>教育科技策略伙伴</h5>
+                        </div>
+                        <div class="organizer-logo">
+                            <img loading="lazy" class="img-60"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/09/google.png" alt="google">
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-title">
+                            <h5>大学与学术支持单位</h5>
+                        </div>
+                        <div class="organizer-logo">
+                            <img loading="lazy" class="img-60"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL3.png" alt="utar">
+                            <img loading="lazy" class="img-40"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL4.png" alt="tarumt">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row2">
+                    <div class="organizer">
+                        <div class="organizer-title">
+                            <h5>AI法律伙伴</h5>
+                        </div>
+                        <div class="organizer-logo">
+                            <img loading="lazy" class="img-60"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL12.png"
+                                alt="tt seng & partners">
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-title">
+                            <h5>技术支援</h5>
+                        </div>
+                        <div class="organizer-logo">
+                            <img loading="lazy" class="img-60 w-160"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL8.png"
+                                alt="ikey technology">
+                            <img loading="lazy" class="img-40"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL9.png" alt="ifinext">
+                            <img loading="lazy" class="img-60 w-160"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL11.png"
+                                alt="troffee education">
+                        </div>
+                    </div>
+                    <div class="organizer">
+                        <div class="organizer-title">
+                            <h5>教学伙伴</h5>
+                        </div>
+                        <div class="organizer-logo">
+                            <img loading="lazy" class="img-50"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/09/1.-LK-EDU-Logo-Colour.png"
+                                alt="LK EDU">
+                            <img loading="lazy" class="img-50"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL5.png" alt="seevo">
+                            <img loading="lazy" class="img-50"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL6.png" alt="eduwel">
+                            <img loading="lazy" class="img-40"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/06/PictureL7.png"
+                                alt="fc education group">
+                        </div>
+                    </div>
+                </div>
         </section>
 
-        <section class="teacher-ai-ability" id="teacher-ai-ability" style="margin-top: 100px;">
-            <h5 style="text-align: center;">教师AI能力 成长5阶段</h5>
-            <div class="ability-container">
-                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Growning-5-Step-C.png"
-                    alt="step A">
-                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Growning-5-Step-B.png"
-                    alt="step B">
-                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Growning-5-Step-A.png"
-                    alt="step C">
-                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-growning-5-step-E.png"
-                    alt="step D">
-                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Growning-5-Step-D.png"
-                    alt="step E">
-            </div>
-        </section>
-
-        <section class="goals-section">
-            <div class="goals-header">
-                <h1>计划目标</h1>
-            </div>
-
-            <div class="goals-grid">
-                <div class="goal-card">
-                    <span class="goal-tag bg-indigo">A</span>
-                    <div>
-                        <h2>提升教师 AI 素养</h2>
-                        <p>帮助教师建立对人工智能基本概念的理解，掌握AI在教育领域的应用方向与潜力</p>
+        <main>
+            <section class="speakers-section" id="speakers-section" style="margin-top: 70px;">
+                <h2 style="text-align: center;">特邀演讲嘉宾和专家讲师</h2>
+                <div class="speakers-container">
+                    <div class="speakers">
+                        <div class="speakers-img">
+                            <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/拿督尤芳达校长-1.png"
+                                alt="speakers">
+                        </div>
+                        <div class="speakers-info">
+                            <h2 class="speakers-name">拿督尤芳达校长</h2>
+                            <h3 class="speakers-title">拉曼大学校长</h3>
+                            <h2 class="speakers-content">教育数位转型与AI教师新角色</h2>
+                            <p class="speakers-description ">拉曼大学校长，资深工程与教育学者，专研微波遥感与数码科技。近期带领拉曼大学与 IBM SkillsBuild
+                                合作，为学生、校友及弱势群体提供免费 AI 技能培训，推动全民 AI 素养与数码包容。</p>
+                        </div>
+                    </div>
+                    <div class="speakers">
+                        <div class="speakers-img loading=" lazy" sze-mei">
+                            <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/sze-mei-1.png"
+                                alt="speakers">
+                        </div>
+                        <div class="speakers-info">
+                            <h2 class="speakers-name">柯思媚</h2>
+                            <h3 class="speakers-title">Google for Education 马来西亚数码转型与社区负责人</h3>
+                            <h2 class="speakers-content">使用“GEMINI”  “GOOGLE VIT”创意教学</h2>
+                            <p class="speakers-description">柯思媚（Kuah Sze Mei）现任 Google for Education
+                                马来西亚数码转型与社区负责人，拥有丰富经验，培训高等教育教师高效使用 Google Workspace 工具。她专注于教育中的 AI 应用，如 Gemini AI 与
+                                NotebookLM，擅长展示 AI 如何融入日常教学与研究，提升教学方法、设计互动教材，并为学生打造个性化学习体验.</p>
+                        </div>
+                    </div>
+                    <div class="speakers">
+                        <div class="speakers-img">
+                            <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/lo-wai-yee.png"
+                                alt="speakers">
+                        </div>
+                        <div class="speakers-info">
+                            <h2 class="speakers-name">卢泋妤</h2>
+                            <h3 class="speakers-title">首席执行总裁</h3>
+                            <h3 class="speakers-title">EDUWEL SDN. BHD.</h3>
+                            <h2 class="speakers-content">使用“GEMINI”  “GOOGLE VIT”创意教学</h2>
+                            <p class="speakers-description">
+                                卢泋妤(Yivonn
+                                Lo)是EDUWEL的首席执行官与创办人，致力于通过创新科技教育为青少年赋能。她积极推动数字化学习及国际竞赛，旨在激发学生的创造力并培养其未来所需技能。凭借丰富的教育行业经验，她已成功将数千名学生与全球机遇相连接，并带领EDUWEL发展成为亚洲领先的STEM与科技平台。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speakers">
+                        <div class="speakers-img">
+                            <img loading="lazy"
+                                src="https://www.mclc.org.my/wp-content/uploads/2025/09/5f2e3d4e-9696-4d54-85ab-6dd9cb1a970b.png"
+                                alt="speakers">
+                        </div>
+                        <div class="speakers-info">
+                            <h2 class="speakers-name">余永乐</h2>
+                            <h3 class="speakers-title"> 首席技术官 </h3>
+                            <h3 class="speakers-title">EDUWEL SDN. BHD.</h3>
+                            <h2 class="speakers-content">AI写作助理 + Canva AI 创意教学设计</h2>
+                            <p class="speakers-description">余永乐是Eduwel
+                                首席技术官，专注数码科技与人工智能程序设计。通过创新教学普及化未来科技教育，培养青年科技创造与实践能力。作为国际科技竞赛首席评委，他推动公平高效的评估机制，帮助青年将原型转化为市场化产品。凭借丰富的科技教育经验，他成功培养多位冠军，并激励更多潜力人才投身科技领域。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speakers">
+                        <div class="speakers-img">
+                            <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/alvis.png"
+                                alt="speakers">
+                        </div>
+                        <div class="speakers-info">
+                            <h2 class="speakers-name">周长健</h2>
+                            <h3 class="speakers-title">缤纷教育中心创办人兼CEO</h3>
+                            <h2 class="speakers-content">使用 “ SUNO” 创意教学（互动工具）</h2>
+                            <p class="speakers-description">
+                                周长键是缤纷教育中心的协办人兼 为一名体验教育认证讲师,他擅长 将心理学与教育活动巧妙结合。周 长键倡导“高效、轻松、有趣”的 教学理念,致力于打造一个寓教于
+                                乐的教育生态系统,让学习充满乐 趣。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speakers">
+                        <div class="speakers-img">
+                            <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/terry-kok.png"
+                                alt="speakers">
+                        </div>
+                        <div class="speakers-info">
+                            <h2 class="speakers-name">郭炜勇</h2>
+                            <h3 class="speakers-title">课外活动副校长</h3>
+                            <h2 class="speakers-content">我的AI 教学蓝图</h2>
+                            <p class="speakers-description">郭子豪（Terry Kok）是 LK 教育集团的联合创办人，该集团是马来西亚领先的全方位教育与领导力发展项目提供者。
+                                凭借二十多年的经验，他一直致力于培育年轻一代的心智，并建设可持续的教育体系。作为马来西亚演讲者协会（MSA）认证讲师及中央委员会成员，
+                                Terry 积极为专业演讲与培训领域作出贡献。他还拥有马来西亚人力资源发展机构（HRDC）认证培训师（TTT）及国家级职业培训操作（VTO）等专业资格。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speakers">
+                        <div class="speakers-img">
+                            <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/dave.png"
+                                alt="speakers">
+                        </div>
+                        <div class="speakers-info">
+                            <h2 class="speakers-name">黎贤杰</h2>
+                            <h3 class="speakers-title">课外活动副校长</h3>
+                            <h2 class="speakers-content">我的AI 教学蓝图</h2>
+                            <p class="speakers-description">黎贤杰 (Dave) (课外活动副校长) 谷歌认证培训讲师 及 Tableau Desktop Specialist
+                                一位获得谷歌教育认证的培训讲师和GPGD专家，自2024年起已培训超过1,000名教师和专业人士。他擅长人工智能、数据分析及多媒体应用，协助教育工作者将谷歌Gemini
+                                AI、Tableau、Wayground, 微软和苹果等工具无缝融入教学，旨在让课堂更具吸引力、高效和数据化。
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="goal-card">
-                    <span class="goal-tag bg-teal">B</span>
-                    <div>
-                        <h2>培养教师数位转型意识</h2>
-                        <p>引导教师认识教育数位化的趋势，掌握成为T型教育人才所需的跨领域技能。</p>
+            <section class="briefing" id="briefing">
+                <video autoplay muted loop playsinline id="bg-video-briefing">
+                    <source src="https://www.mclc.org.my/wp-content/uploads/2025/08/MCLC-BG-Boomerang2.mp4"
+                        type="video/mp4">
+                </video>
+                <div class="ai-face">
+                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/what-is-MCLC-AI-1.png"
+                        alt="face">
+                </div>
+                <div class="briefing-text">
+                    <h5>MCLC-AI 国家人工智能教育计划简介</h5>
+                    <p>
+                        在国家迈向高科技驱动型经济体的关键阶段&#44; 教育不仅是文明传承的核心&#44;
+                        更是国家科技自主与经济转型的基础设施。为呼应国家“数字教育政策”与“TVET 国家发展战略”&#44;
+                        马来西亚华文理事会（华理会）启动 MCLC-AI
+                        国家级教育赋能计划&#44; 以人工智能为核心动能&#44; 加速全国基础教育的科技化、专业化、 产业化 。
+                    </p>
+                    <p>
+                        MCLC-AI 以“微型学校数码化教学”为切入点&#44; 联合教育部推动城乡同步课堂&#44; 实现优质资源共享&#44;
+                        缩小城乡差距&#44; 落实教育公平。此举不仅提升教学效能&#44; 更为乡区学校接轨国家发展蓝图打下基础。
+                    </p>
+                    <p>
+                        2025年&#44; 华理会设立“AI赋能华文教育工委会”&#44; 推行「学好AI、用好AI」全国教师培训计划&#44;
+                        系统培养具备AI素养与跨领域能力的T型教师。我们致力于将AI融入教学实践&#44; 让每一位教师都能成为引领变革的创新力量。
+                    </p>
+                    <p>
+                        更重要的是&#44; MCLC-AI与国家TVET战略深度对接&#44; 推动AI、编程、数据科技等实用技能纳入基础教育阶段&#44; 为未来技术型社会培育具备实战能力的年轻人才。
+                        我们相信&#44; 未来的竞争&#44; 不只在知识&#44; 更在能力与创造力。
+                    </p>
+                    <p>
+                        MCLC-AI&#44; 不只是教育改革计划&#44; 更是国家未来竞争力的战略布局。
+                    </p>
+                </div>
+            </section>
+
+            <section class="teacher-ai-ability" id="teacher-ai-ability" style="margin-top: 100px;">
+                <h5 style="text-align: center;">教师AI能力 成长5阶段</h5>
+                <div class="ability-container">
+                    <img loading="lazy"
+                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Growning-5-Step-C.png"
+                        alt="step A">
+                    <img loading="lazy"
+                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Growning-5-Step-B.png"
+                        alt="step B">
+                    <img loading="lazy"
+                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Growning-5-Step-A.png"
+                        alt="step C">
+                    <img loading="lazy"
+                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-growning-5-step-E.png"
+                        alt="step D">
+                    <img loading="lazy"
+                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Growning-5-Step-D.png"
+                        alt="step E">
+                </div>
+            </section>
+
+            <section class="goals-section">
+                <div class="goals-header">
+                    <h1>计划目标</h1>
+                </div>
+
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <span class="goal-tag bg-indigo">A</span>
+                        <div>
+                            <h2>提升教师 AI 素养</h2>
+                            <p>帮助教师建立对人工智能基本概念的理解，掌握AI在教育领域的应用方向与潜力</p>
+                        </div>
+                    </div>
+
+                    <div class="goal-card">
+                        <span class="goal-tag bg-teal">B</span>
+                        <div>
+                            <h2>培养教师数位转型意识</h2>
+                            <p>引导教师认识教育数位化的趋势，掌握成为T型教育人才所需的跨领域技能。</p>
+                        </div>
+                    </div>
+
+                    <div class="goal-card">
+                        <span class="goal-tag bg-amber">C</span>
+                        <div>
+                            <h2>建立教师AI教学能力</h2>
+                            <p>​让教师学会如何将AI工具整合于备课、出题、批改与教学活动中，提升教学效率与质量。</p>
+                        </div>
+                    </div>
+
+                    <div class="goal-card">
+                        <span class="goal-tag bg-rose">D</span>
+                        <div>
+                            <h2>打造校本知识型AI平台</h2>
+                            <p>​协助学校建立专属的AI知识库，让教师能上传、调用本校教材与教学内容，实现内容本地化。</p>
+                        </div>
+                    </div>
+
+                    <div class="goal-card">
+                        <span class="goal-tag bg-sky">E</span>
+                        <div>
+                            <h2>提升老师教学素质</h2>
+                            <p>AI协助自动生成教学内容、测验题目、作文评语等，减轻教师重复性工作。</p>
+                        </div>
+                    </div>
+
+                    <div class="goal-card">
+                        <span class="goal-tag bg-fuchsia">F</span>
+                        <div>
+                            <h2>提升学生学习体验</h2>
+                            <p>AI实现更具互动性、个性化的教学模式，激发学生的学习兴趣与主动性。</p>
+                        </div>
+                    </div>
+
+                    <div class="goal-card full">
+                        <span class="goal-tag bg-lime">G</span>
+                        <div>
+                            <h2>建立 MCLC 区域 AI 实验示范基地</h2>
+                            <p>推动MCLC成为全马首个推动AI华文教育的示范区，逐步扩展至更多学校与教师社群。</p>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="goal-card">
-                    <span class="goal-tag bg-amber">C</span>
-                    <div>
-                        <h2>建立教师AI教学能力</h2>
-                        <p>​让教师学会如何将AI工具整合于备课、出题、批改与教学活动中，提升教学效率与质量。</p>
+            <section class="rundown" id="rundown">
+                <div class="table-wrap">
+
+                    <!-- Day 1 -->
+                    <div class="table1">
+                        <h5>Day 1 - 6/10/2025 (星期一)</h5>
+                        <table class="agenda-table">
+                            <thead>
+                                <tr class="time">
+                                    <th>时间</th>
+                                    <th>活动</th>
+                                    <th>讲师</th>
+                                    <th>协调员</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="event">
+                                    <td>7.30 - 8.10</td>
+                                    <td colspan="3">登记报到</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>8.15 - 9.00</td>
+                                    <td>开幕典礼 <br>网站启动仪式</td>
+                                    <td colspan="2">MCLC</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>9.00 - 9.45</td>
+                                    <td>教育数位转型与 AI 教师新角色</td>
+                                    <td colspan="2">拿督尤芳达教授博士<br>拉曼大学(UTAR)校长</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>9.50 - 12.00</td>
+                                    <td>AI写作助理 + Canva AI 创意教学设计</td>
+                                    <td>余永乐</td>
+                                    <td>EDUWEL 团队</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>12.00 - 13.00</td>
+                                    <td colspan="3">午餐</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>13.00 - 15.30</td>
+                                    <td>使用 “GEMINI” “GOOGLE VIT” 创意教学</td>
+                                    <td>
+                                        <ol>
+                                            <li>SZE MEI（GOOGLE）</li>
+                                            <li>卢泋妤<br>(GOOGLE CERTIFIED TRAINER)</li>
+                                        </ol>
+                                    </td>
+                                    <td>EDUWEL 团队</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>15.30 - 16.00</td>
+                                    <td>AI是否会取代教师?<br>教师如何转型?</td>
+                                    <td>郭炜勇</td>
+                                    <td>彭德生<br>(主持人)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
 
-                <div class="goal-card">
-                    <span class="goal-tag bg-rose">D</span>
-                    <div>
-                        <h2>打造校本知识型AI平台</h2>
-                        <p>​协助学校建立专属的AI知识库，让教师能上传、调用本校教材与教学内容，实现内容本地化。</p>
+                    <!-- Day 2 -->
+                    <div class="table2">
+                        <h5>Day 2 - 7/10/2025 (星期二)</h5>
+                        <table class="agenda-table">
+                            <thead>
+                                <tr class="time">
+                                    <th>时间</th>
+                                    <th>活动</th>
+                                    <th>讲师</th>
+                                    <th>协调员</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="event">
+                                    <td>8.00 - 8.30</td>
+                                    <td colspan="3">登记报到</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>8.30 - 10.00</td>
+                                    <td>使用 “SUNO” 创意教学<br>（音乐生成工具）</td>
+                                    <td>周长键</td>
+                                    <td>缤纷教育团队</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>10.00 - 11.30</td>
+                                    <td>NOTEBOOK LM 使用 “CAPCUT” 创意教学<br>(互动工具 + 教学视频生成)</td>
+                                    <td>郭炜勇</td>
+                                    <td>LK EDUCATION 团队</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>11.30 - 12.15</td>
+                                    <td colspan="3">午餐</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>12.15 - 13.00</td>
+                                    <td rowspan="2">我的AI教学蓝图</td>
+                                    <td colspan="2">赖国俊督学<br>主题：分享“推动”经验</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>13:00 - 14:45</td>
+                                    <td colspan="2">黎贤杰副校长<br>主题: 我的AI教学蓝图</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>14:45 – 15:15</td>
+                                    <td colspan="3">Q&A</td>
+                                </tr>
+                                <tr class="event">
+                                    <td>15.15 - 15.30</td>
+                                    <td>总结与闭幕</td>
+                                    <td colspan="2">张美燕 科长</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+
                 </div>
-
-                <div class="goal-card">
-                    <span class="goal-tag bg-sky">E</span>
-                    <div>
-                        <h2>提升老师教学素质</h2>
-                        <p>AI协助自动生成教学内容、测验题目、作文评语等，减轻教师重复性工作。</p>
-                    </div>
-                </div>
-
-                <div class="goal-card">
-                    <span class="goal-tag bg-fuchsia">F</span>
-                    <div>
-                        <h2>提升学生学习体验</h2>
-                        <p>AI实现更具互动性、个性化的教学模式，激发学生的学习兴趣与主动性。</p>
-                    </div>
-                </div>
-
-                <div class="goal-card full">
-                    <span class="goal-tag bg-lime">G</span>
-                    <div>
-                        <h2>建立 MCLC 区域 AI 实验示范基地</h2>
-                        <p>推动MCLC成为全马首个推动AI华文教育的示范区，逐步扩展至更多学校与教师社群。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="rundown" id="rundown">
-            <div class="table-wrap">
-
-                <!-- Day 1 -->
-                <div class="table1">
-                <h5>Day 1 - 6/10/2025 (星期一)</h5>
-                <table class="agenda-table">
-                    <thead>
-                    <tr class="time">
-                        <th>时间</th>
-                        <th>活动</th>
-                        <th>讲师</th>
-                        <th>协调员</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="event">
-                        <td>7.30 - 8.10</td>
-                        <td colspan="3">登记报到</td>
-                    </tr>
-                    <tr class="event">
-                        <td>8.15 - 9.00</td>
-                        <td>开幕典礼 <br>网站启动仪式</td>
-                        <td colspan="2">MCLC</td>
-                    </tr>
-                    <tr class="event">
-                        <td>9.00 - 9.45</td>
-                        <td>教育数位转型与 AI 教师新角色</td>
-                        <td colspan="2">拿督尤芳达教授博士<br>拉曼大学(UTAR)校长</td>
-                    </tr>
-                    <tr class="event">
-                        <td>9.50 - 12.00</td>
-                        <td>AI写作助理 + Canva AI 创意教学设计</td>
-                        <td>余永乐</td>
-                        <td>EDUWEL 团队</td>
-                    </tr>
-                    <tr class="event">
-                        <td>12.00 - 13.00</td>
-                        <td colspan="3">午餐</td>
-                    </tr>
-                    <tr class="event">
-                        <td>13.00 - 15.30</td>
-                        <td>使用 “GEMINI” “GOOGLE VIT” 创意教学</td>
-                        <td>
-                        <ol>
-                            <li>SZE MEI（GOOGLE）</li>
-                            <li>卢泋妤<br>(GOOGLE CERTIFIED TRAINER)</li>
-                        </ol>
-                        </td>
-                        <td>EDUWEL 团队</td>
-                    </tr>
-                    <tr class="event">
-                        <td>15.30 - 16.00</td>
-                        <td>AI是否会取代教师?<br>教师如何转型?</td>
-                        <td>郭炜勇</td>
-                        <td>彭德生<br>(主持人)</td>
-                    </tr>
-                    </tbody>
-                </table>
-                </div>
-
-                <!-- Day 2 -->
-                <div class="table2">
-                <h5>Day 2 - 7/10/2025 (星期二)</h5>
-                <table class="agenda-table">
-                    <thead>
-                    <tr class="time">
-                        <th>时间</th>
-                        <th>活动</th>
-                        <th>讲师</th>
-                        <th>协调员</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="event">
-                        <td>8.00 - 8.30</td>
-                        <td colspan="3">登记报到</td>
-                    </tr>
-                    <tr class="event">
-                        <td>8.30 - 10.00</td>
-                        <td>使用 “SUNO” 创意教学<br>（音乐生成工具）</td>
-                        <td>周长键</td>
-                        <td>缤纷教育团队</td>
-                    </tr>
-                    <tr class="event">
-                        <td>10.00 - 11.30</td>
-                        <td>NOTEBOOK LM 使用 “CAPCUT” 创意教学<br>(互动工具 + 教学视频生成)</td>
-                        <td>郭炜勇</td>
-                        <td>LK EDUCATION 团队</td>
-                    </tr>
-                    <tr class="event">
-                        <td>11.30 - 12.15</td>
-                        <td colspan="3">午餐</td>
-                    </tr>
-                    <tr class="event">
-                        <td>12.15 - 13.00</td>
-                        <td rowspan="2">我的AI教学蓝图</td>
-                        <td colspan="2">赖国俊督学<br>主题：分享“推动”经验</td>
-                    </tr>
-                    <tr class="event">
-                        <td>13:00 - 14:45</td>
-                        <td colspan="2">黎贤杰副校长<br>主题: 我的AI教学蓝图</td>
-                    </tr>
-                    <tr class="event">
-                        <td>14:45 – 15:15</td>
-                        <td colspan="3">Q&A</td>
-                    </tr>
-                    <tr class="event">
-                        <td>15.15 - 15.30</td>
-                        <td>总结与闭幕</td>
-                        <td colspan="2">张美燕 科长</td>
-                    </tr>
-                    </tbody>
-                </table>
-                </div>
-
-            </div>
             </section>
 
 
-        <section class="mclc-members" id="mclc-members">
-            <section class="team-wrap">
-                <img loading="lazy" class="hero-banner"
-                    src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Committee-Layout-Banner.png"
-                    alt="mclc members banner">
+            <section class="mclc-members" id="mclc-members">
+                <section class="team-wrap">
+                    <img loading="lazy" class="hero-banner"
+                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/MCLC-AI-Committee-Layout-Banner.png"
+                        alt="mclc members banner">
 
-                <!-- 顾问 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>顾问</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/拿督尤芳达校长.png" alt="尤芳达">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">顾问</div>
-                                <h3>拿督尤芳达教授博士</h3>
-                                <p>拉曼大学(UTAR)校长</p>
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/拿督李仕伟校长.png" alt="李仕伟">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">顾问</div>
-                                <h3>拿督李仕伟教授</h3>
-                                <p>东姑阿都拉曼管理及工艺大学(TAR UMT)校长</p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- 顾问 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>顾问</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/拿督尤芳达校长.png" alt="尤芳达">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">顾问</div>
+                                    <h3>拿督尤芳达教授博士</h3>
+                                    <p>拉曼大学(UTAR)校长</p>
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/拿督李仕伟校长.png" alt="李仕伟">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">顾问</div>
+                                    <h3>拿督李仕伟教授</h3>
+                                    <p>东姑阿都拉曼管理及工艺大学(TAR UMT)校长</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- AI 工委会主席 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>工委会主席</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/拿督王鸿财.png" alt="王鸿财">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">AI 工委会主席</div>
-                                <h3>拿督王鸿财</h3>
-                                <p>马来西亚华文理事会 - 主席</p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- AI 工委会主席 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>工委会主席</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/拿督王鸿财.png" alt="王鸿财">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">AI 工委会主席</div>
+                                    <h3>拿督王鸿财</h3>
+                                    <p>马来西亚华文理事会 - 主席</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>副主席</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/彭徳勝第一副主席-.png" alt="彭德生">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">AI 工委会副主席</div>
-                                <h3>彭德生</h3>
-                                <!-- <p>马来西亚华文理事会 第一副主席</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/林毓聪科长.png" alt="林毓聪">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">AI 工委会副主席</div>
-                                <h3>林毓聪 科长</h3>
-                                <!-- <p>马来西亚华文理事会 第二副主席</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/蔡淑祯-校长.png" alt="蔡淑祯 校长">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">AI 工委会副主席</div>
-                                <h3>张美燕 科长</h3>
-                                <!-- <p>马来西亚全国校长职工会 执行顾问</p> -->
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>副主席</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/彭徳勝第一副主席-.png"
+                                        alt="彭德生">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">AI 工委会副主席</div>
+                                    <h3>彭德生</h3>
+                                    <!-- <p>马来西亚华文理事会 第一副主席</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/林毓聪科长.png" alt="林毓聪">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">AI 工委会副主席</div>
+                                    <h3>林毓聪 科长</h3>
+                                    <!-- <p>马来西亚华文理事会 第二副主席</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/蔡淑祯-校长.png"
+                                        alt="蔡淑祯 校长">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">AI 工委会副主席</div>
+                                    <h3>张美燕 科长</h3>
+                                    <!-- <p>马来西亚全国校长职工会 执行顾问</p> -->
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- 总协调 · 秘书 · 副秘书 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>总协调 · 秘书 · 副秘书</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/梁綉麗.png" alt="梁綉麗">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">总协调</div>
-                                <h3>梁綉麗</h3>
-                                <!-- <p>Director of Infra Mobile Digital Sdn Bhd</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/王僡衫.png" alt="王僡衫">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">副协调</div>
-                                <h3>王僡衫</h3>
-                                <!-- <p>Director of Infra Mobile Digital Sdn Bhd</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/范忠星-copy.png" alt="范忠星">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">秘书</div>
-                                <h3>范忠星</h3>
-                                <!-- <p>马来西亚华文理事会 秘书长</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="#" alt="李锡悦">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">查账</div>
-                                <h3>李锡悦</h3>
-                                <!-- <p>Director of Flying Colour Education Management Sdn Bhd</p> -->
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- 总协调 · 秘书 · 副秘书 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>总协调 · 秘书 · 副秘书</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/梁綉麗.png"
+                                        alt="梁綉麗">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">总协调</div>
+                                    <h3>梁綉麗</h3>
+                                    <!-- <p>Director of Infra Mobile Digital Sdn Bhd</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/王僡衫.png"
+                                        alt="王僡衫">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">副协调</div>
+                                    <h3>王僡衫</h3>
+                                    <!-- <p>Director of Infra Mobile Digital Sdn Bhd</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/范忠星-copy.png" alt="范忠星">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">秘书</div>
+                                    <h3>范忠星</h3>
+                                    <!-- <p>马来西亚华文理事会 秘书长</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="#" alt="李锡悦">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">查账</div>
+                                    <h3>李锡悦</h3>
+                                    <!-- <p>Director of Flying Colour Education Management Sdn Bhd</p> -->
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- 财政 · 场地 · 摄影录像 · 音响 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>财政 · 场地 · 摄影录像 · 音响</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/吕志勤.png" alt="吕志勤">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">财政 · 正</div>
-                                <h3>吕志勤</h3>
-                                <!-- <p>马来西亚华文理事会 财政</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/麦雪儿.png" alt="麦雪儿">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">财政 · 副</div>
-                                <h3>麦雪儿</h3>
-                                <!-- <p>马来西亚华文理事会 财政</p> -->
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- 财政 · 场地 · 摄影录像 · 音响 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>财政 · 场地 · 摄影录像 · 音响</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/吕志勤.png"
+                                        alt="吕志勤">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">财政 · 正</div>
+                                    <h3>吕志勤</h3>
+                                    <!-- <p>马来西亚华文理事会 财政</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/麦雪儿.png"
+                                        alt="麦雪儿">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">财政 · 副</div>
+                                    <h3>麦雪儿</h3>
+                                    <!-- <p>马来西亚华文理事会 财政</p> -->
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- 课程 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>课程设计</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/彭徳勝第一副主席-.png" alt="彭徳勝">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">课程</div>
-                                <h3>彭徳勝</h3>
-                                <!-- <p>AI 软件工程师</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/林毓聪科长.png" alt="林毓聪">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">课程</div>
-                                <h3>林毓聪</h3>
-                                <!-- <p>AI 软件工程师</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/赖国俊督学.png" alt="赖国俊">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">课程</div>
-                                <h3>赖国俊 督学</h3>
-                                <!-- <p>AI 软件工程师</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/郑微鸾-马来西亚教育部-教育资源与技术司-助理总监.png"
-                                    alt="郑微鸾">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">课程</div>
-                                <h3>郑微鸾 督学</h3>
-                                <!-- <p>马来西亚教育部 教育资源与技术司 助理总监</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/麦筱筠督学.png" alt="麥筱筠 督学">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">课程</div>
-                                <h3>麥筱筠 督学</h3>
-                                <!-- <p>吉隆坡直辖区教育厅 学术处信息与通讯技术科 高级助理厅长</p> -->
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/lo-wai-yee.png" alt="卢泋妤">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">课程</div>
-                                <h3>卢泋妤</h3>
-                                <!-- <p>马来亚大学中文系毕业生协会 (会长)</p> -->
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- 课程 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>课程设计</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/彭徳勝第一副主席-.png"
+                                        alt="彭徳勝">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">课程</div>
+                                    <h3>彭徳勝</h3>
+                                    <!-- <p>AI 软件工程师</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/林毓聪科长.png" alt="林毓聪">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">课程</div>
+                                    <h3>林毓聪</h3>
+                                    <!-- <p>AI 软件工程师</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/赖国俊督学.png" alt="赖国俊">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">课程</div>
+                                    <h3>赖国俊 督学</h3>
+                                    <!-- <p>AI 软件工程师</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/07/郑微鸾-马来西亚教育部-教育资源与技术司-助理总监.png"
+                                        alt="郑微鸾">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">课程</div>
+                                    <h3>郑微鸾 督学</h3>
+                                    <!-- <p>马来西亚教育部 教育资源与技术司 助理总监</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/麦筱筠督学.png" alt="麥筱筠 督学">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">课程</div>
+                                    <h3>麥筱筠 督学</h3>
+                                    <!-- <p>吉隆坡直辖区教育厅 学术处信息与通讯技术科 高级助理厅长</p> -->
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/09/lo-wai-yee.png"
+                                        alt="卢泋妤">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">课程</div>
+                                    <h3>卢泋妤</h3>
+                                    <!-- <p>马来亚大学中文系毕业生协会 (会长)</p> -->
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- AI 技术总监 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>AI 技术总监</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/叶中勇.png" alt="叶中勇">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">技术总监</div>
-                                <h3>叶中勇</h3>
-                                <!-- <p>AI 软件工程师</p> -->
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- AI 技术总监 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>AI 技术总监</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/叶中勇.png"
+                                        alt="叶中勇">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">技术总监</div>
+                                    <h3>叶中勇</h3>
+                                    <!-- <p>AI 软件工程师</p> -->
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- 宣传 · 公关 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>宣传 · 公关</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/李优强.png" alt="李优强">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">公关</div>
-                                <h3>李优强</h3>
-                                <p></p>
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="" alt="许赢尹">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">公关</div>
-                                <h3>许赢尹</h3>
-                                <p></p>
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/09/alvis.png" alt="周长键">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">公关</div>
-                                <h3>周长键</h3>
-                                <p></p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- 宣传 · 公关 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>宣传 · 公关</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/李优强.png"
+                                        alt="李优强">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">公关</div>
+                                    <h3>李优强</h3>
+                                    <p></p>
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="" alt="许赢尹">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">公关</div>
+                                    <h3>许赢尹</h3>
+                                    <p></p>
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/09/alvis.png" alt="周长键">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">公关</div>
+                                    <h3>周长键</h3>
+                                    <p></p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- 场地 · 司仪 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>场地 · 司仪</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/陈湘能.png" alt="陈湘能">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">场地</div>
-                                <h3>陈湘能</h3>
-                                <p></p>
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/林文力.png" alt="林文力">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">场地</div>
-                                <h3>林文力</h3>
-                                <p></p>
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/麦雪儿.png" alt="麦雪儿">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">司仪</div>
-                                <h3>麦雪儿</h3>
-                                <p></p>
-                            </div>
-                        </article>
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/李优强.png" alt="李优强">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">司仪</div>
-                                <h3>李优强</h3>
-                                <p></p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- 场地 · 司仪 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>场地 · 司仪</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/陈湘能.png"
+                                        alt="陈湘能">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">场地</div>
+                                    <h3>陈湘能</h3>
+                                    <p></p>
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/林文力.png"
+                                        alt="林文力">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">场地</div>
+                                    <h3>林文力</h3>
+                                    <p></p>
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/麦雪儿.png"
+                                        alt="麦雪儿">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">司仪</div>
+                                    <h3>麦雪儿</h3>
+                                    <p></p>
+                                </div>
+                            </article>
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/07/李优强.png"
+                                        alt="李优强">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">司仪</div>
+                                    <h3>李优强</h3>
+                                    <p></p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- 工作坊报到 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>工作坊报到</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/赖国俊督学.png" alt="赖国俊">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">工作坊报到</div>
-                                <h3>赖国俊 督学</h3>
-                                <p>督学总协调</p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+                    <!-- 工作坊报到 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>工作坊报到</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy"
+                                        src="https://www.mclc.org.my/wp-content/uploads/2025/06/赖国俊督学.png" alt="赖国俊">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">工作坊报到</div>
+                                    <h3>赖国俊 督学</h3>
+                                    <p>督学总协调</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-                <!-- 纪念品 -->
-                <section class="team-section">
-                    <div class="team-head">
-                        <h2>纪念品</h2>
-                        <div class="head-accent"></div>
-                    </div>
-                    <div class="team-grid">
-                        <article class="person-card">
-                            <div class="person-media">
-                                <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/钱靖茹.png" alt="钱靖茹">
-                            </div>
-                            <div class="person-body">
-                                <div class="person-chip">工作坊报到</div>
-                                <h3>钱靖茹</h3>
-                                <!-- <p>督学总协调</p> -->
-                            </div>
-                        </article>
-                    </div>
+                    <!-- 纪念品 -->
+                    <section class="team-section">
+                        <div class="team-head">
+                            <h2>纪念品</h2>
+                            <div class="head-accent"></div>
+                        </div>
+                        <div class="team-grid">
+                            <article class="person-card">
+                                <div class="person-media">
+                                    <img loading="lazy" src="https://www.mclc.org.my/wp-content/uploads/2025/06/钱靖茹.png"
+                                        alt="钱靖茹">
+                                </div>
+                                <div class="person-body">
+                                    <div class="person-chip">工作坊报到</div>
+                                    <h3>钱靖茹</h3>
+                                    <!-- <p>督学总协调</p> -->
+                                </div>
+                            </article>
+                        </div>
+                    </section>
                 </section>
             </section>
-        </section>
 
 
 
-        <section class="t-video" id="t-video">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/uXeG0tjhaEk?si=joU0Tomk0hfN02NE" title="mclc video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-        </section>
+            <section class="t-video" id="t-video">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/uXeG0tjhaEk?si=joU0Tomk0hfN02NE" title="mclc video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
 
-        <section class="banner1">
-            <h5>“教育的数字化不仅是设备的升级&#44; 更是教师能力的再进化。我们要让AI成为老师的助手&#44; 而不是负担。”</h5>
-            <p>主席寄语 | 拿督王鸿财力</p>
-        </section>
+            <section class="banner1">
+                <h5>“教育的数字化不仅是设备的升级&#44; 更是教师能力的再进化。我们要让AI成为老师的助手&#44; 而不是负担。”</h5>
+                <p>主席寄语 | 拿督王鸿财力</p>
+            </section>
 
-        <section class="banner2" id="banner2">
+            <section class="banner2" id="banner2">
 
-        </section>
+            </section>
 
-        <section class="contact-us">
-            <div class="callout">
-                <h2>热爱教育、勇于创新的教育伙伴们 &#58; </h2>
+            <section class="contact-us">
+                <div class="callout">
+                    <h2>热爱教育、勇于创新的教育伙伴们 &#58; </h2>
 
-                <p>
-                    在人工智能（AI）快速进入课堂的今天&#44; MCLC 正透过 <strong>“学好AI
-                        · 用好AI”</strong> 赋能教师计划&#44; 带领大家迈向教育的新时代。但我们知道&#44;
-                    一项真正成功的教育改革&#44; <strong>绝不能只有平台和技术&#44;
-                        更需要您——每一位一线教师的声音与参与。</strong>
-                </p>
+                    <p>
+                        在人工智能（AI）快速进入课堂的今天&#44; MCLC 正透过 <strong>“学好AI
+                            · 用好AI”</strong> 赋能教师计划&#44; 带领大家迈向教育的新时代。但我们知道&#44;
+                        一项真正成功的教育改革&#44; <strong>绝不能只有平台和技术&#44;
+                            更需要您——每一位一线教师的声音与参与。</strong>
+                    </p>
 
-                <p>
-                    现在&#44; 我们诚挚邀请您把自己在教学中使用AI的经验、想法、反思甚至疑问&#44;
-                    <strong>变成一篇文字</strong>&#44; 分享给更多同行的老师。您的故事&#44;
-                    也许正是另一位老师的启发与转折点。
-                </p>
+                    <p>
+                        现在&#44; 我们诚挚邀请您把自己在教学中使用AI的经验、想法、反思甚至疑问&#44;
+                        <strong>变成一篇文字</strong>&#44; 分享给更多同行的老师。您的故事&#44;
+                        也许正是另一位老师的启发与转折点。
+                    </p>
 
-                <h3>投稿主题建议</h3>
-                <ul>
-                    <li>我如何第一次用 AI 备课 / 出题 / 批改</li>
-                    <li>AI 真的帮我省时间了吗 &#63; 我的真实体验</li>
-                    <li>从传统教学走向 AI&#44; 我遇到的挑战与收获</li>
-                    <li>我心中的「T型教师」 &#58; 不只是专业&#44; 还要会整合工具</li>
-                    <li>我用的AI工具推荐 / 教学案例分享</li>
-                </ul>
+                    <h3>投稿主题建议</h3>
+                    <ul>
+                        <li>我如何第一次用 AI 备课 / 出题 / 批改</li>
+                        <li>AI 真的帮我省时间了吗 &#63; 我的真实体验</li>
+                        <li>从传统教学走向 AI&#44; 我遇到的挑战与收获</li>
+                        <li>我心中的「T型教师」 &#58; 不只是专业&#44; 还要会整合工具</li>
+                        <li>我用的AI工具推荐 / 教学案例分享</li>
+                    </ul>
 
-                <h3>投稿说明</h3>
-                <ul>
-                    <li><strong>字数建议 &#58; </strong>500–1000 字（图文并茂更佳）</li>
-                    <li><strong>语言 &#58; </strong>中文（简体） / 英文 / 马来文</li>
-                    <li><strong>身份 &#58; </strong>欢迎小学老师、 中学老师、教育行政人员投稿</li>
-                    <li><strong>内容形式 &#58; </strong>故事心得、教学做法、图文教学流程、视频也欢迎</li>
-                </ul>
+                    <h3>投稿说明</h3>
+                    <ul>
+                        <li><strong>字数建议 &#58; </strong>500–1000 字（图文并茂更佳）</li>
+                        <li><strong>语言 &#58; </strong>中文（简体） / 英文 / 马来文</li>
+                        <li><strong>身份 &#58; </strong>欢迎小学老师、 中学老师、教育行政人员投稿</li>
+                        <li><strong>内容形式 &#58; </strong>故事心得、教学做法、图文教学流程、视频也欢迎</li>
+                    </ul>
 
-                <h3>我们会为您提供</h3>
-                <ul>
-                    <li>文章署名（在官网公开发表）</li>
-                    <li>设计图文封面（适合分享至学校/社群）</li>
-                    <li>精选稿件将收录于《MCLC AI 教学精选集》电子书</li>
-                    <li>有机会受邀成为 AI 种子讲师 / 分享嘉宾！</li>
-                </ul>
+                    <h3>我们会为您提供</h3>
+                    <ul>
+                        <li>文章署名（在官网公开发表）</li>
+                        <li>设计图文封面（适合分享至学校/社群）</li>
+                        <li>精选稿件将收录于《MCLC AI 教学精选集》电子书</li>
+                        <li>有机会受邀成为 AI 种子讲师 / 分享嘉宾！</li>
+                    </ul>
 
-                <h3>投稿方式</h3>
-                <p>
-                    请将您的文章发送至 &#58;
-                    <a class="email" href="mclchualihui@gmail.com">mclchualihui@gmail.com</a><br />
-                    标题格式 &#58; <span class="tag">【学校/社团/单位/个人等】</span> + <span class="tag">姓名</span> + <span
-                        class="tag">文章标题</span>
-                </p>
+                    <h3>投稿方式</h3>
+                    <p>
+                        请将您的文章发送至 &#58;
+                        <a class="email" href="mclchualihui@gmail.com">mclchualihui@gmail.com</a><br />
+                        标题格式 &#58; <span class="tag">【学校/社团/单位/个人等】</span> + <span class="tag">姓名</span> + <span
+                            class="tag">文章标题</span>
+                    </p>
 
-                <p>
-                    我们将于每两周精选文章刊登在官网 AI 教学专栏中。
-                </p>
+                    <p>
+                        我们将于每两周精选文章刊登在官网 AI 教学专栏中。
+                    </p>
 
-                <p>
-                    您的一篇文章&#44; 可能改变无数教师的教学方式
-                </p>
+                    <p>
+                        您的一篇文章&#44; 可能改变无数教师的教学方式
+                    </p>
 
-                <p class="closing">
-                    让我们一起 &#58; <br />
-                    写下AI教学路上的真实经验&#44; <br />
-                    <strong>分享智慧、传递温度、共建未来教育社群。</strong>
-                </p>
-            </div>
-        </section>
-    </main>
+                    <p class="closing">
+                        让我们一起 &#58; <br />
+                        写下AI教学路上的真实经验&#44; <br />
+                        <strong>分享智慧、传递温度、共建未来教育社群。</strong>
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
 
     <script>
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+            const content = document.getElementById("content");
+
+            preloader.style.opacity = "0";
+            preloader.style.transition = "opacity 0.5s ease";
+
+            setTimeout(() => {
+                preloader.style.display = "none";
+                content.style.display = "block";
+            }, 500); 
+        });
+
         var target_mili_sec = new Date("Oct 06, 2025 09:00:00").getTime();
         function timer() {
             var now_mili_sec = new Date().getTime();
@@ -1108,15 +1180,12 @@
                             navItems.forEach(item => {
                                 item.classList.remove('active');
                             });
-
-
                             correspondingNavItem.classList.add('active');
                         }
                     }
                 });
             }, observerOptions);
 
-            // 开始观察所有区域
             sections.forEach(section => {
                 observer.observe(section);
             });
